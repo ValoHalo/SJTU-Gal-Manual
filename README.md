@@ -15,3 +15,5 @@ SJTU 正能量倡议联萌 群文档
 [DLsite的食用方法](https://github.com/ValoHalo/SJTU-Gal-Manual/blob/main/%E8%BF%9B%E9%98%B6%E8%AF%9D%E9%A2%98/02-DLsite%E7%9A%84%E9%A3%9F%E7%94%A8%E6%96%B9%E6%B3%95.md)
 
 [RPG生肉的食用方法](https://github.com/ValoHalo/SJTU-Gal-Manual/blob/main/%E8%BF%9B%E9%98%B6%E8%AF%9D%E9%A2%98/03-RPG%E7%94%9F%E8%82%89%E7%9A%84%E9%A3%9F%E7%94%A8%E6%96%B9%E6%B3%95.md)
+
+[ADV生肉的食用方法](https://github.com/ValoHalo/SJTU-Gal-Manual/blob/main/%E8%BF%9B%E9%98%B6%E8%AF%9D%E9%A2%98/04-ADV%E7%94%9F%E8%82%89%E7%9A%84%E9%A3%9F%E7%94%A8%E6%96%B9%E6%B3%95.md)
