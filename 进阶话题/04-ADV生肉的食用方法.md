@@ -279,7 +279,7 @@
  <img width="886" height="416" alt="图片" src="https://github.com/user-attachments/assets/1dda8593-e4cf-45a3-846b-19554333cf26" />
 
 ollama官网
-安装完成之后，我们回到ollama的官网，点击左上方的models，再从表中选择自己想下载的模型**（需要说明的是本地部署大模型对于显卡的显存有着要求，这里推荐显卡至少有着8G的显存才尝试进行大模型部署。8G显存可以部署各种7b大模型，16G显存可部署各种14b大模型，后续的SakuraLLM也是这样的）**。这里以 deepseek-r1:14b 为例。我们复制右上角的命令行，接着在随便一个文件夹的空白处右键，选择在终端中打开，打开powershell，然后填入之前复制的命令行，等待大模型下载安装完成即可。
+安装完成之后，我们回到ollama的官网，点击左上方的models，再从表中选择自己想下载的模型**（需要说明的是本地部署大模型对于显卡的显存有着要求，这里推荐显卡至少有着8G的显存才尝试进行大模型部署。8G显存可以部署各种7b大模型，16G显存可部署各种14b大模型，后续的SakuraLLM也是这样的）**。这里以deepseek-r1:14b为例。我们复制右上角的命令行，接着在随便一个文件夹的空白处右键，选择在终端中打开，打开powershell，然后填入之前复制的命令行，等待大模型下载安装完成即可。
 
 <img width="886" height="149" alt="图片" src="https://github.com/user-attachments/assets/4023fa45-9e22-418c-beef-e8ea32c329de" />
 
@@ -290,7 +290,7 @@ ollama官网
 
 下载并安装大模型
 
-安装完大模型之后，我们可以在 powershell里填入ollama list并运行，查看已经安装的大模型名称。接着我们输入 ollama serve运行ollama，其中能看到host为：http://127.0.0.1:11434（默认地址，如果你没有更改的话应该也是这个）。最后我们打开 LunaTranslator翻译设置里的大模型通用接口。API接口地址填写： http://localhost:11434/v1/chat/completions；API Key不填，model填写 ollama list里的name列，我这里选择的是：huihui_ai/deepseek-r1-abliterated:14b 。后面的各项可以不变，这样就设置完成了。但是值得一提的是大部分大模型现在有着思考的过程，这会导致出翻译的速度较慢，会比较严重的影响游戏体验，所以我更推荐下一节要将的Sakura大模型。
+安装完大模型之后，我们可以在 powershell里填入ollama list并运行，查看已经安装的大模型名称。接着我们输入 ollama serve运行ollama，其中能看到host为：`http://127.0.0.1:11434`（默认地址，如果你没有更改的话应该也是这个）。最后我们打开 LunaTranslator翻译设置里的大模型通用接口。API接口地址填写： `http://localhost:11434/v1/chat/completions`；API Key不填，model填写 ollama list里的name列，我这里选择的是：huihui_ai/deepseek-r1-abliterated:14b 。后面的各项可以不变，这样就设置完成了。但是值得一提的是大部分大模型现在有着思考的过程，这会导致出翻译的速度较慢，会比较严重的影响游戏体验，所以我更推荐下一节要将的Sakura大模型。
 
 <img width="886" height="118" alt="图片" src="https://github.com/user-attachments/assets/0371f002-1493-450f-9f08-12dd3f5ea53f" />
 
@@ -304,7 +304,7 @@ ollama官网
 
 填入设置
 
-关于Sakura大模型的使用同样有多种方法，这里就介绍相对简单的[Sakura GUI启动器](https://github.com/PiDanShouRouZhouXD/Sakura_Launcher_GUI)的使用方法。首先下载并安装[Sakura GUI启动器](https://github.com/PiDanShouRouZhouXD/Sakura_Launcher_GUI/releases/latest)，安装完成后我们双击点开，进入界面之后选择下载，分别在Sakura模型下载和llama.cpp下载中选择自己对应的情况（显卡是A卡还是N卡，显存8G对应7b模型，12G以上对应14b模型）。下载完成之后进入启动界面，分别点击刷新，选择对应的模型和显卡，高级设置，记住host和port，默认情况就是 http://127.0.0.1:8080/。全部完成后点击粉色的启动即可。然后我们返回Lunatranslator，这次我们选择大模型下的Sakura大模型，点击齿轮进行设置。设置里填入刚才记下的API接口地址，默认情况就是： http://127.0.0.1:8080/。以及选择的模型，后面的选项可以不做更改。这样设置就完成了，每次运行先打开Sakura GUI，点击启动，再打开 Lunatranslator即可。
+关于Sakura大模型的使用同样有多种方法，这里就介绍相对简单的[Sakura GUI启动器](https://github.com/PiDanShouRouZhouXD/Sakura_Launcher_GUI)的使用方法。首先下载并安装[Sakura GUI启动器](https://github.com/PiDanShouRouZhouXD/Sakura_Launcher_GUI/releases/latest)，安装完成后我们双击点开，进入界面之后选择下载，分别在Sakura模型下载和llama.cpp下载中选择自己对应的情况（显卡是A卡还是N卡，显存8G对应7b模型，12G以上对应14b模型）。下载完成之后进入启动界面，分别点击刷新，选择对应的模型和显卡，高级设置，记住host和port，默认情况就是`http://127.0.0.1:8080/`。全部完成后点击粉色的启动即可。然后我们返回Lunatranslator，这次我们选择大模型下的Sakura大模型，点击齿轮进行设置。设置里填入刚才记下的API接口地址，默认情况就是： `http://127.0.0.1:8080/`。以及选择的模型，后面的选项可以不做更改。这样设置就完成了，每次运行先打开Sakura GUI，点击启动，再打开Lunatranslator即可。
 
 <img width="694" height="620" alt="图片" src="https://github.com/user-attachments/assets/a4bb3202-3b4b-491b-803e-7153687e80eb" />
 
@@ -322,7 +322,7 @@ Llama.cpp下载
 
 Luna的Sakura模型设置
 
-完成上述的大模型设置之后，我们在翻译设置里点开要启用的翻译（笔刷前的那个东西）， LunaTranslator支持多翻译同时进行，我们再点击笔刷设置不同颜色即可比对各个翻译来游玩了。完成翻译的设置后，我们转区运行我们的生肉游戏，以《 Circus Disk - Christmas Days - 》为例，游戏运行后，我们点击 LunaTranslator 的选择游戏选项（ 游戏机图标和三本书图标中间的那个，此外LunaTranslator 的图标可能被隐藏了，可在页面右下角找到）。找到我们的游戏进程单击后选择OK，进入到选择文本界面。这时我们返回游戏界面，启动游戏，点击几次对话（建议将游戏的文本显示速度设置到最快）。在文本界面中选择与对话内容完全一致的点击显示选项即可（多个完全一致的情况只需要选择一个）。如果有内嵌的选项点开的话，翻译内容则不是外挂的，而是替换到游戏的文本框中，表现出与翻译补丁类似的效果，但是内嵌的情况容易出现各类bug，请酌情使用。点击显示之后，我们关闭文本界面，继续点击，即可出现翻译，展示图中蓝色字体是Sakura7b模型的翻译，而绿色和灰色是传统翻译，可以看到哪怕是7b模型的效果也要强上许多。至此生肉的食用部分结束。
+完成上述的大模型设置之后，我们在翻译设置里点开要启用的翻译（笔刷前的那个东西），LunaTranslator支持多翻译同时进行，我们再点击笔刷设置不同颜色即可比对各个翻译来游玩了。完成翻译的设置后，我们转区运行我们的生肉游戏，以《Circus Disk -Christmas Days-》为例，游戏运行后，我们点击LunaTranslator的选择游戏选项（ 游戏机图标和三本书图标中间的那个，此外LunaTranslator的图标可能被隐藏了，可在页面右下角找到）。找到我们的游戏进程单击后选择OK，进入到选择文本界面。这时我们返回游戏界面，启动游戏，点击几次对话（建议将游戏的文本显示速度设置到最快）。在文本界面中选择与对话内容完全一致的点击显示选项即可（多个完全一致的情况只需要选择一个）。如果有内嵌的选项点开的话，翻译内容则不是外挂的，而是替换到游戏的文本框中，表现出与翻译补丁类似的效果，但是内嵌的情况容易出现各类bug，请酌情使用。点击显示之后，我们关闭文本界面，继续点击，即可出现翻译，展示图中蓝色字体是Sakura7b模型的翻译，而绿色和灰色是传统翻译，可以看到哪怕是7b模型的效果也要强上许多。至此生肉的食用部分结束。
 
  <img width="221" height="193" alt="图片" src="https://github.com/user-attachments/assets/62b2b4ec-34e4-4137-bf61-f3016773c20f" />
 
